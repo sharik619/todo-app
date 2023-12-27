@@ -1,4 +1,8 @@
-import secrets
-from sys import argv
+# Take a input from user and store it into 'title'
 
-print(secrets.token_hex(int(argv[1])))
+
+# Take another input from user and store it into 'description'
+
+
+# Once done, print Todo Title and Discription
+
