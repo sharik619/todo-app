@@ -1,19 +1,9 @@
-# Take a input from user and store it into 'title'
-title = input('Title: ')
+option = int(input('Todo App\n  1. Create\n  2. List\n: '))
 
-# Take another input from user and store it into 'description'
-description = input('Description: ')
 
-# Once done, print Todo Title and Discription
-print(title, ":", description)
-
-# Write it into a file so that tasks get preserved.
-
-with open("hello.txt", "w") as f:
-    f.write(title)
-    f.write(":")
-    f.write(description)
-    f.write("\n")
-
-with open("hello.txt") as f:
-    print(f.read())
+if option == 1:
+    print('Create')
+elif option == 2:
+    print('List')
+else:
+    print('Please select 1 or 2 only.')
