@@ -8,3 +8,10 @@ description = input('Description: ')
 print(title, ":", description)
 
 # Write it into a file so that tasks get preserved.
+
+with open("hello.txt", "w") as f:
+    f.write("Title \n")
+    f.write("Description \n")
+
+with open("hello.txt") as f:
+    print(f.read())
