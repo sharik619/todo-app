@@ -10,8 +10,9 @@ print(title, ":", description)
 # Write it into a file so that tasks get preserved.
 
 with open("hello.txt", "w") as f:
-    f.write("Title \n")
-    f.write("Description \n")
+    f.write(title)
+    f.write("\n")
+    f.write(description)
 
 with open("hello.txt") as f:
     print(f.read())
