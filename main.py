@@ -11,8 +11,9 @@ print(title, ":", description)
 
 with open("hello.txt", "w") as f:
     f.write(title)
-    f.write("\n")
+    f.write(":")
     f.write(description)
+    f.write("\n")
 
 with open("hello.txt") as f:
     print(f.read())
